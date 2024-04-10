@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useInView, useScroll } from "framer-motion";
-import { BiChevronDownCircle } from "react-icons/bi";
 import { Brain } from "../components/Brain";
 import { useRef } from "react";
 
