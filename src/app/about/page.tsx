@@ -3,6 +3,7 @@
 import { motion, useInView, useScroll } from "framer-motion";
 import { Brain } from "../components/Brain";
 import { useRef } from "react";
+import { skills } from "../data";
 
 export default function AboutPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -90,48 +91,14 @@ export default function AboutPage() {
               transition={{ delay: 0.2 }}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Javascript
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                NextJS 14
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Css
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Sass
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Tailwind Css
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node JS
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MongoDb
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                PostgreSql
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Jwt
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Auth JS
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express Js
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Typescript
-              </div>
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="capitalize rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-flush-orange-600"
+                >
+                  {skill}
+                </div>
+              ))}
             </motion.div>
             {/* Scroll biografia */}
             <motion.svg
@@ -174,16 +141,16 @@ export default function AboutPage() {
                   {/* estudio desc */}
                   <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
                   {/* fecha estudio */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">2022/11</div>
+                  <div className="p-3 text-flush-orange-50 text-sm font-semibold">2022/11</div>
                   {/* fecha compani */}
                   <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
                 </div>
                 {/* lado centro */}
                 <div className="w-1/6 flex justify-center">
                   {/* Linea */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-white rounded relative">
                     {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/*lado derecho */}
@@ -196,9 +163,9 @@ export default function AboutPage() {
                 {/* lado centro */}
                 <div className="w-1/6 flex justify-center ">
                   {/* Linea */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-white rounded relative">
                     {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/*lado derecho */}
@@ -208,7 +175,7 @@ export default function AboutPage() {
                   {/* estudio desc */}
                   <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
                   {/* fecha estudio */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">2022/11</div>
+                  <div className="p-3 text-flush-orange-50 text-sm font-semibold">2022/11</div>
                   {/* fecha compani */}
                   <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
                 </div>
@@ -222,16 +189,16 @@ export default function AboutPage() {
                   {/* estudio desc */}
                   <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
                   {/* fecha estudio */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">2022/11</div>
+                  <div className="p-3 text-flush-orange-500 text-sm font-semibold">2022/11</div>
                   {/* fecha compani */}
                   <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
                 </div>
                 {/* lado centro */}
                 <div className="w-1/6 flex justify-center">
                   {/* Linea */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-white rounded relative">
                     {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/*lado derecho */}

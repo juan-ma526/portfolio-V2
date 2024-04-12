@@ -10,6 +10,19 @@ const config: Config = {
     extend: {
       colors: {
         principal: "#FEE9CE",
+        "flush-orange": {
+          "50": "#fff9ed",
+          "100": "#fff1d4",
+          "200": "#ffdfa8",
+          "300": "#ffc770",
+          "400": "#ffa337",
+          "500": "#ff8408",
+          "600": "#f06c06",
+          "700": "#c75107",
+          "800": "#9e3f0e",
+          "900": "#7f360f",
+          "950": "#451905",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

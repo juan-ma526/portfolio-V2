@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,8 +27,21 @@ export default function Home() {
             experiencia y conocimientos en un entorno dinámico donde pueda seguir expandiendo mis capacidades técnicas.
           </p>
           <div className="w-full flex justify-center items-center gap-4 mb-2">
-            <button className="p-3 rounded-lg ring-1 ring-black bg-black text-white">Trabajos</button>
-            <button className="p-3 rounded-lg ring-1 ring-black ">Contacto</button>
+            <Link href="CV_JuanMartinPerez.pdf" download="CV_JuanMartinPerez.pdf" target="_blank">
+              <button className="p-3 rounded-lg text-flush-orange-500  border-2 border-flush-orange-600 bg-white hover:text-flush-orange-700 hover:border-flush-orange-700 ">
+                Descarga CV
+              </button>
+            </Link>
+            <Link href="/portfolio">
+              <button className="p-3 rounded-lg bg-gradient-to-b from-flush-orange-500 to-flush-orange-600 text-white hover:from-flush-orange-600 hover:to-flush-orange-700">
+                Trabajos
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className="p-3 rounded-lg  text-flush-orange-500  border-2 border-flush-orange-600 bg-white hover:text-flush-orange-700 hover:border-flush-orange-700">
+                Contacto
+              </button>
+            </Link>
           </div>
         </div>
       </div>

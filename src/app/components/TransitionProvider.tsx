@@ -13,7 +13,7 @@ export const TransitionProvider = ({ children }: Props) => {
 
   return (
     <AnimatePresence mode="wait">
-      <div key={pathname} className="w-screen h-screen bg-gradient-to-b from-blue-100 to-orange-100">
+      <div key={pathname} className="w-screen h-screen bg-gradient-to-b from-flush-orange-500 to-flush-orange-50">
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
           animate={{ height: "0vh" }}
