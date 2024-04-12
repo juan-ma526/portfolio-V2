@@ -38,8 +38,8 @@ export default function PortfolioPage() {
 
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-red-300 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-flush-orange-900 to-flush-orange-800" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-flush-orange-800 to-red-300" />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -50,13 +50,13 @@ export default function PortfolioPage() {
                     {item.title}
                   </h1>
                   <div className="relative w-[23rem] h-[16rem] md:w-[39rem] md:h-[30rem] lg:w-[800px] lg:h-[350px] xl:w-[983px] xl:h-[401px]">
-                    <div className="w-[17rem] h-[14rem] md:w-[32rem] md:h-[26rem] lg:w-[42rem] lg:h-[20rem] xl:w-[50rem] xl:h-[23rem] relative">
-                      <Image src={item.img} fill alt="Imagen projecto" />
+                    <div className="w-[17rem] h-[14rem] md:w-[32rem] md:h-[26rem] lg:w-[42rem] lg:h-[20rem] xl:w-[50rem] xl:h-[23rem] relative ">
+                      <Image className="rounded-lg" src={item.img} fill alt="Imagen projecto" />
                     </div>
                     <div className="absolute flex flex-col gap-2 right-0 top-0 w-16 h-52 md:h-[26rem] xl:h-[23rem]">
                       {item.icons.map((icon, index) => (
                         <div key={index} className="relative w-10 h-10">
-                          <Image src={icon} alt="Icono" fill />
+                          <Image src={icon} alt="Icono" fill className="rounded-full" />
                         </div>
                       ))}
                     </div>
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-6xl md:text-8xl">Tienes algun Projecto?</h1>
+        <h1 className="text-6xl md:text-8xl text-flush-orange-600">Tenes algun Projecto?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -89,14 +89,14 @@ export default function PortfolioPage() {
             <defs>
               <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
             </defs>
-            <text fill="#000">
+            <text fill="#f06c06">
               <textPath xlinkHref="#circlePath" className="text-xl">
                 FullStack Developer - M.E.R.N - P.E.R.N
               </textPath>
             </text>
           </motion.svg>
           <Link
-            className="w-24 h-24 md:w-32 md:h-32 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center "
+            className="w-24 h-24 md:w-32 md:h-32 absolute top-0 left-0 right-0 bottom-0 m-auto bg-flush-orange-600 text-white rounded-full flex items-center justify-center "
             href="/contact"
           >
             Contratame

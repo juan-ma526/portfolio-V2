@@ -83,13 +83,13 @@ export const Navbar = () => {
       </div>
       {/* Social Media */}
       <div className="hidden md:flex gap-4 w-1/3 justify-center">
-        <Link href="https://github.com/juan-ma526">
+        <Link target="_blanck" href="https://github.com/juan-ma526">
           <Image src="/github.png" alt="Logo github" width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/juan-ma526/">
+        <Link target="_blanck" href="https://www.linkedin.com/in/juan-ma526/">
           <Image src="/linkedin.png" alt="Logo linkedin" width={24} height={24} />
         </Link>
-        <Link href="https://www.youtube.com/channel/UC3TfUrSkOdYDMKmoODiQoww">
+        <Link target="_blanck" href="https://www.youtube.com/channel/UC3TfUrSkOdYDMKmoODiQoww">
           <Image src="/youtube.png" alt="Logo youtube" width={32} height={32} />
         </Link>
       </div>

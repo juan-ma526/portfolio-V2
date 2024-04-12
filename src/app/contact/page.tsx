@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [success, setSuccess] = useState(false);
@@ -70,30 +71,32 @@ export default function ContactPage() {
           className="h-2/3 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 md:p-24"
         >
           <span className="text-lg md:text-2xl">A Martin Perez:</span>
-          <span className="text-base md:text-lg lg:text-sm">Mensaje:</span>
+          <span className="text-sm md:text-lg lg:text-sm">Mensaje:</span>
           <textarea
             onChange={(e) => setTextArea(e.target.value)}
             name="user_message"
             rows={6}
             className="p-9 md:p-5 lg:p-0 w-full bg-transparent border-b-2 border-b-black outline-none resize-none text-base md:text-xl lg:text-2xl"
           />
-          <span className="text-base md:text-lg lg:text-sm">Mi direccion de email es:</span>
+          <span className="text-sm md:text-lg lg:text-sm">Mi direccion de email es:</span>
           <input
             onChange={(e) => setEmail(e.target.value)}
             name="user_email"
             type="email"
             className="bg-transparent border-b-2 border-b-black outline-none text-base md:text-xl lg:text-2xl"
           />
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">Enviar</button>
+          <button className="bg-flush-orange-500 rounded font-semibold text-white p-4">Enviar</button>
           {success && (
-            <span className="text-green-600 font-semibold text-base md:text-xl lg:text-2xl">
-              Tu mensaje fue enviado con exito!!
-            </span>
+            <div className="flex justify-center items-center gap-2 text-gray-600 font-normal text-base md:text-xl p-4 rounded-3xl bg-flush-orange-100 border-2 border-flush-orange-400">
+              <Image src="/success.png" alt="Success" width={40} height={40} />
+              <span>Tu mensaje fue enviado con exito!!</span>
+            </div>
           )}
           {error && (
-            <span className="text-red-600 font-semibold text-base md:text-xl lg:text-2xl">
-              LLena el campo de mensaje y email Por Favor!!
-            </span>
+            <div className="flex justify-center items-center gap-2 text-gray-600 font-normal text-base md:text-xl p-4 rounded-3xl bg-flush-orange-100 border-2 border-flush-orange-400">
+              <Image src="/wrong.png" alt="Error" width={40} height={40} />
+              <span>LLena el campo de mensaje y email Por Favor!!</span>
+            </div>
           )}
         </form>
       </div>
