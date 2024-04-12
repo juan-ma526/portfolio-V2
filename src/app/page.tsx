@@ -16,15 +16,12 @@ export default function Home() {
           {/* Titulo */}
           <h1 className="text-4xl md:text-6xl font-bold">Fullstack Developer</h1>
           {/* Descripcion */}
-          <p className="md:text-base text-sm">
-            En septiembre 2022 comence mis estudios en la programacion. Trabaje en una practica profesional para la
-            empresa Cruce, en colaboración con otros compañeros haciendo pair programming con ellos, lo que fortaleció
-            mis habilidades blandas y el trabajo en equipo. En dicha experiencia realizamos una app de turnos con
-            seguimiento de ellos y metas semanales a cumplir para la empresa.También cree varias aplicaciones mas.
-            Constantemente ,eh estado mejorando mis habilidades técnicas y blandas. Soy una persona activa y apasionada
-            por mejorar mis habilidades y aprender nuevas herramientas. Además, disfruto trabajar en equipo y enfrentar
-            desafíos que me permitan encontrar soluciones a los problemas.Estoy entusiasmado por contribuir con mi
-            experiencia y conocimientos en un entorno dinámico donde pueda seguir expandiendo mis capacidades técnicas.
+          <p className="md:text-lg text-sm leading-6 md:leading-8">
+            Como Fullstack Developer, poseo conocimientos en JavaScript, MongoDB y PostgreSQL, junto con herramientas
+            como Express y Node para construir distintas API. Mi experiencia en React, Next y CSS, junto con mi
+            capacidad para trabajar en equipo y mi enfoque en la mejora continua, me convierten en un desarrollador
+            versátil y adaptable. Apasionado por los retos, me mantengo actualizado y comprometido con la excelencia en
+            cada proyecto.
           </p>
           <div className="w-full flex justify-center items-center gap-4 mb-2">
             <Link href="CV_JuanMartinPerez.pdf" download="CV_JuanMartinPerez.pdf" target="_blank">

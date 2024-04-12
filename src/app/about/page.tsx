@@ -4,6 +4,7 @@ import { motion, useInView, useScroll } from "framer-motion";
 import { Brain } from "../components/Brain";
 import { useRef } from "react";
 import { skills } from "../data";
+import { ExperienceListItem } from "../components/ExperienceListItem";
 
 export default function AboutPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -20,18 +21,43 @@ export default function AboutPage() {
       {/* Containter */}
       <div className="h-full overflow-y-scroll lg:flex" ref={containerRef}>
         {/* Text container */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:pr-0 w-full xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-20 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:pr-0 w-full xl:w-1/2">
           {/* Biografia container*/}
           <div className="flex flex-col gap-12 justify-center">
+            <motion.span
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 0.1 }}
+              transition={{ duration: 3, repeat: Infinity, delay: 0.1 }}
+              className="text-white"
+            >
+              Scroll hacia abajo
+            </motion.span>
             <h1 className="font-bold text-2xl">BIOGRAFIA</h1>
-            <p className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eius quas quod corrupti dolorum vitae
-              corporis saepe mollitia eligendi porro ab veritatis sit quidem atque necessitatibus voluptas voluptatem
-              possimus eaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eius quas quod corrupti
-              dolorum vitae corporis saepe mollitia eligendi porro ab veritatis sit quidem atque necessitatibus voluptas
-              voluptatem possimus eaque.
+            <p className="text-lg leading-8">
+              Estudie Ingenieria en Sistemas 3 años en la FCEFyN de Córdoba, ahí conocí la programación dando mis
+              primeros pasos con C++ y decidí dedicarme a ella. Enpece mis estudios en Ingles, sabiendo la importancia
+              del idioma en una carrera como programacion, llegando a completar 4 niveles de los 6 disponibles, para
+              obtener una certificacion en la Facultad de Lenguas de B1+. En septiembre del 2022 participe en un
+              Bootcamp de programacion de la empresa Plataforma 5. Curse durante 4 meses 10 horas diarias de lunes a
+              viernes, aprendiendo tecnologias y metodologias tanto de Backend como de Frontend. En el Bootcamp, hubo 3
+              proyectos finales, una TMDB aplicando lo aprendido durante la parte teorica y tecnina, despues la
+              realizacion de un Ecommerce con 4 compañeros, para reforzar las habilidades blandes, y aprender como
+              trabaja un equipo con metas semanales y diarias, usando Trello, y metodologias Scrum. El ultimo proyecto
+              trabaje realizando una practica profesional por 2 meses para la empresa Cruce, en colaboración con 3
+              compañeros haciendo pair programming con ellos, lo que fortaleció mis habilidades aun mas mis habilidades
+              tecnicas y blandas, como la comunicación y la resolucion de problemas que iban apareciendo. En dicha
+              experiencia laboral realizamos una app de turnos con seguimiento de un encargado de la empresa Cruce que
+              nos establecia metas semanales a cumplir para ellos. Al terminar el Bootcamp, eh estado mejorando mis
+              habilidades técnicas, en CSS, SASS, REDUX, NEXTJS, TAILWIND CSS y BOOSTRAP, realizando cursos en distintas
+              plataformas, y realizando app para mantenerme programando constantemente. Soy una persona activa y
+              apasionada por la programacion, estoy constantemente intentando mejorar mis habilidades tecnicas y blandas
+              y sumarme nuevas herramientas para utilizar en mi dia a dia. Además, disfruto trabajar en equipo y
+              enfrentar desafíos que me permitan encontrar soluciones a los problemas. Confío en mis habilidades como
+              desarrollador y estoy comprometido con el crecimiento profesional continuo. Estoy entusiasmado por
+              contribuir con mi experiencia y conocimientos en un entorno dinámico donde pueda seguir expandiendo mis
+              capacidades técnicas.
             </p>
-            <span className="italic">orem ipsum dolor sit amet, consectetur adipisicing.</span>
+            <span className="italic">Martin Perez, FullStack Developer</span>
             <div className="self-end">
               <svg width="145" height="125" viewBox="0 0 525 585" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -133,77 +159,60 @@ export default function AboutPage() {
             {/* Experience list */}
             <motion.div initial={{ x: -300 }} animate={isEstudiosRefInView ? { x: 0 } : {}} className="">
               {/* list item */}
-              <div className="flex justify-between h-48">
-                {/* lado izq */}
-                <div className="w-1/3 ">
-                  {/* estudio titulo*/}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Bootcamp Plataforma 5</div>
-                  {/* estudio desc */}
-                  <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
-                  {/* fecha estudio */}
-                  <div className="p-3 text-flush-orange-50 text-sm font-semibold">2022/11</div>
-                  {/* fecha compani */}
-                  <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
-                </div>
-                {/* lado centro */}
-                <div className="w-1/6 flex justify-center">
-                  {/* Linea */}
-                  <div className="w-1 h-full bg-white rounded relative">
-                    {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/*lado derecho */}
-                <div className="w-1/3 "></div>
-              </div>
+              <ExperienceListItem
+                title={"Ingenieria en Sistemas"}
+                desc={"Curse 3 años de la carrera de Ingenieria en Sistemas,"}
+                date={"2015/2018"}
+                direccion={"left"}
+                place="FCEFyN/Cordoba"
+              />
               {/* list item */}
-              <div className="flex justify-between h-48">
-                {/* lado izq */}
-                <div className="w-1/3 "></div>
-                {/* lado centro */}
-                <div className="w-1/6 flex justify-center ">
-                  {/* Linea */}
-                  <div className="w-1 h-full bg-white rounded relative">
-                    {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/*lado derecho */}
-                <div className="w-1/3 ">
-                  {/* estudio titulo*/}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Bootcamp Plataforma 5</div>
-                  {/* estudio desc */}
-                  <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
-                  {/* fecha estudio */}
-                  <div className="p-3 text-flush-orange-50 text-sm font-semibold">2022/11</div>
-                  {/* fecha compani */}
-                  <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
-                </div>
-              </div>
+              <ExperienceListItem
+                title={"Idioma Ingles"}
+                desc={
+                  "Curse 2 años intensivos de Ingles, haciendo 4 niveles de los 6 disponibles, llegando a tener un nivel de B1+"
+                }
+                date={"2018/2020"}
+                direccion={"right"}
+                place="Facultad de Lenguas/Cordoba"
+              />
               {/* list item */}
-              <div className="flex justify-between h-48">
-                {/* lado izq */}
-                <div className="w-1/3 ">
-                  {/* estudio titulo*/}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Bootcamp Plataforma 5</div>
-                  {/* estudio desc */}
-                  <div className="p-3 text-sm italic">Curse un bootcamp en asdjasd asjdlasd asdjllasdj asjdldjsal</div>
-                  {/* fecha estudio */}
-                  <div className="p-3 text-flush-orange-500 text-sm font-semibold">2022/11</div>
-                  {/* fecha compani */}
-                  <div className="p-1 bg-white rounded text-sm font-semibold w-fit">Apple</div>
-                </div>
-                {/* lado centro */}
-                <div className="w-1/6 flex justify-center">
-                  {/* Linea */}
-                  <div className="w-1 h-full bg-white rounded relative">
-                    {/* Circulo */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-flush-orange-600 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/*lado derecho */}
-                <div className="w-1/3 "></div>
-              </div>
+              <ExperienceListItem
+                title={"Bootcamp de Programacion"}
+                desc={
+                  "Curse un bootcamp de programacion, 4 meses intensivos, cursando una cantidad superior a las 895 horas, aprendi las tecnologias que me permiten desempeñarme como fullstack developer."
+                }
+                date={"10/2022 - 12/2022"}
+                direccion={"left"}
+                place="Plataforma 5"
+              />
+              <ExperienceListItem
+                title={"Curso de CSS"}
+                desc={
+                  "Realice un curso de CSS para reforzar mis conocimientos sobre el estilo y como usar correctamente CSS."
+                }
+                date={"02/2023 - 04/2023"}
+                direccion={"right"}
+                place="Udemy"
+              />
+              <ExperienceListItem
+                title={"Curso de React"}
+                desc={
+                  "Realice un curso de React ampliando mis conocimientos, aprendiendo a usar Redux, Context, y reforzando mis conocimientos sobre React."
+                }
+                date={"05/2023 - 07/2023"}
+                direccion={"left"}
+                place="Udemy"
+              />
+              <ExperienceListItem
+                title={"Curso de Next JS"}
+                desc={
+                  "Realice un curso de Next 13.1 aprendiendo las ventajas y como usar las herramientas que dispone Next, como el server side y mejorar el SEO de las paginas, tambien pude actualizar mis conocimientos de Next a la version 14, mejorando mis conocimientos, y aprendiendo tambien como usar Server Actions, y route Api de Next."
+                }
+                date={"09/2023 - 04/2024"}
+                direccion={"right"}
+                place="Udemy"
+              />
             </motion.div>
           </div>
         </div>
