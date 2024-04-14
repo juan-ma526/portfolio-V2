@@ -65,7 +65,7 @@ export default function PortfolioPage() {
                   <div className="flex items-center justify-center">
                     {item.links.map((link, index) => (
                       <Link target="_blank" key={index} href={link.path}>
-                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-lg xl:p-2 xl:font-medium bg-white text-gray-600 font-semibold m-4 xl:m-2 rounded">
+                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-4 lg:text-lg xl:p-2 xl:font-medium text-white bg-flush-orange-600 hover:bg-flush-orange-700  font-semibold m-4 xl:m-2 rounded ">
                           {link.title}
                         </button>
                       </Link>

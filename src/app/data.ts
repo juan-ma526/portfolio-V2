@@ -6,8 +6,8 @@ export const items = [
     desc: "Aplicación web que permite la reserva de turnos para empresas con sucursales físicas, posibilitando la administración de la cantidad de clientes en la locación.Cada sucursal podrá diferenciar la cantidad de clientes en simultáneo que podrá recibir y los rangos horarios, desde el usuario administrador/operador.Cada turno será de 15 minutos, y se pueden cancelar hasta con 2 horas de antelación.",
     img: "/projects/project1.jpg",
     links: [
-      { title: "github", path: "https://github.com/juan-ma526/App-Turnos-Redux/tree/main/turnos-app" },
-      { title: "video", path: "https://www.youtube.com/watch?v=wwARGlKkVmY" },
+      { title: "Github", path: "https://github.com/juan-ma526/App-Turnos-Redux/tree/main/turnos-app" },
+      { title: "Video", path: "https://www.youtube.com/watch?v=wwARGlKkVmY" },
     ],
     icons: [
       "/icons/html.png",
@@ -27,9 +27,9 @@ export const items = [
     desc: "Aplicacion de Peliculas, para poder ver las peliculas o series en cartelera o por genero, y poder ver informacion de cada pelicula o serie para poder ver el trailer de cada una. A su vez podes tener un registro de usuario para poder almacenar las peliculas favoritas y tener una lista de peliculas o series favoritas.",
     img: "/projects/project2.jpg",
     links: [
-      { title: "github", path: "https://github.com/juan-ma526/TMDB-V2" },
-      { title: "video", path: "www.gmail.com" },
-      { title: "demo", path: "https://tmdb-v2-two.vercel.app/" },
+      { title: "Github", path: "https://github.com/juan-ma526/TMDB-V2" },
+      { title: "Video", path: "https://www.youtube.com/watch?v=NE1TvG3aA6A" },
+      { title: "Demo", path: "https://tmdb-v2-two.vercel.app/" },
     ],
     icons: [
       "/icons/html.png",
@@ -47,10 +47,7 @@ export const items = [
     title: "Ecommerce COMO EN CASA",
     desc: "Aplicacion Ecommerce para visualizar y poder ordenar entre platos de comidas, con la posibilidad de tener administradores para manejar los productos y el stock de cada comida, y poder manipular las ordenes. Tambien tiene un carrito de compras en el que queda un historial de los pedidos realizados.",
     img: "/projects/project3.jpg",
-    links: [
-      { title: "github", path: "https://github.com/juan-ma526/Ecommerce-Como-en-Casa" },
-      { title: "video", path: "www.gmail.com" },
-    ],
+    links: [{ title: "Github", path: "https://github.com/juan-ma526/Ecommerce-Como-en-Casa" }],
     icons: [
       "/icons/html.png",
       "/icons/react.png",
@@ -68,7 +65,10 @@ export const items = [
     title: "Mini Pago app MercadoPago",
     desc: "Aplicacion sencilla para implementar el uso de mercadoPago en una compra.",
     img: "/projects/project4.jpg",
-    links: [{ title: "github", path: "https://github.com/juan-ma526/mercadoPago" }],
+    links: [
+      { title: "Github", path: "https://github.com/juan-ma526/mercadoPago" },
+      { title: "Video", path: "https://www.youtube.com/watch?v=oEZyWe-fdeY" },
+    ],
     icons: ["/icons/html.png", "/icons/express.png", "/icons/css.png", "/icons/javascript.png"],
   },
   {
@@ -78,9 +78,9 @@ export const items = [
     desc: "Aplicacion web para el concurso realizado para la pagina https://cursos.devtalles.com/. Dicha app fue realizada en una semana con la posibilidad de crear sorteos, modificarlos y eliminarlos. La participacion es realizada con discord api, se necesita esta en el servidor de devtalles para poder participar, manejando las rutas con esas condiciones. Tambien se tiene la posibilidad de elegir un ganador y ver los participantes en cada sorteo, con la posibilidad de eliminar alguno de ellos.",
     img: "/projects/project5.jpg",
     links: [
-      { title: "github", path: "https://github.com/juan-ma526/devtalles-codequest-sorteos" },
-      { title: "video", path: "www.gmail.com" },
-      { title: "demo", path: "https://devtalles-codequest-sorteos-gamma.vercel.app/" },
+      { title: "Github", path: "https://github.com/juan-ma526/devtalles-codequest-sorteos" },
+      { title: "Video", path: "https://www.youtube.com/watch?v=Pqops93TiPI" },
+      { title: "Demo", path: "https://devtalles-codequest-sorteos-gamma.vercel.app/" },
     ],
     icons: [
       "/icons/html.png",
@@ -99,9 +99,8 @@ export const items = [
     desc: "Mini Proyecto Freelance. Se trata de una aplicacion web para la compra de rifas, para sortear determinados productos. Con la posibilidad de comprar n cantidad de tickets, dandote la cantidad de tickets comprados. El admin puede crear el stock de tickets, borrar dicho stock, seleccionar un ganador, buscar un ticket en especifico, y ver los tickets que fueron comprados",
     img: "/projects/project6.jpg",
     links: [
-      { title: "github", path: "www.gmail.com" },
-      { title: "video", path: "www.gmail.com" },
-      { title: "demo", path: "www.gmail.com" },
+      { title: "Github", path: "https://github.com/juan-ma526/sorteo-rifa" },
+      { title: "Video", path: "https://www.youtube.com/watch?v=WDKeG76QRxU&t=2s" },
     ],
     icons: [
       "/icons/html.png",
@@ -117,10 +116,10 @@ export const items = [
     color: "from-purple-300 to-red-300",
     title: "Perfect Mentor App",
     desc: "Aplicacion web (mobile first) que permita encontrar a tu mentor ideal. Permite la creacion de usuarios y la posibilidad de elegir entre ser un mentor o un mentee, poder matchear entre los usuarios verificados disponibles, y con los match positivos tener un chat para comunicarse con ellos",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "/projects/project7.jpg",
     links: [
-      { title: "github", path: "https://github.com/juan-ma526/perfectMentor" },
-      { title: "video", path: "www.gmail.com" },
+      { title: "Github", path: "https://github.com/juan-ma526/perfectMentor" },
+      { title: "Video", path: "" },
     ],
     icons: [
       "/icons/html.png",
