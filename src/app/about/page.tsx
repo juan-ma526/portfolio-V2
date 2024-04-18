@@ -34,24 +34,24 @@ export default function AboutPage() {
             </motion.span>
             <h1 className="font-bold text-2xl">BIOGRAFIA</h1>
             <p className="text-lg leading-8">
-              Estudie Ingenieria en Sistemas 3 años en la FCEFyN de Córdoba, ahí conocí la programación dando mis
-              primeros pasos con C++ y decidí dedicarme a ella. Enpece mis estudios en Ingles, sabiendo la importancia
-              del idioma en una carrera como programacion, llegando a completar 4 niveles de los 6 disponibles, para
-              obtener una certificacion en la Facultad de Lenguas de B1+. En septiembre del 2022 participe en un
-              Bootcamp de programacion de la empresa Plataforma 5. Curse durante 4 meses 10 horas diarias de lunes a
-              viernes, aprendiendo tecnologias y metodologias tanto de Backend como de Frontend. En el Bootcamp, hubo 3
-              proyectos finales, una TMDB aplicando lo aprendido durante la parte teorica y tecnina, despues la
-              realizacion de un Ecommerce con 4 compañeros, para reforzar las habilidades blandes, y aprender como
-              trabaja un equipo con metas semanales y diarias, usando Trello, y metodologias Scrum. El ultimo proyecto
-              trabaje realizando una practica profesional por 2 meses para la empresa Cruce, en colaboración con 3
-              compañeros haciendo pair programming con ellos, lo que fortaleció mis habilidades aun mas mis habilidades
-              tecnicas y blandas, como la comunicación y la resolucion de problemas que iban apareciendo. En dicha
+              Estudie Ingeniería en Sistemas 3 años en la FCEFyN de Córdoba, ahí conocí la programación dando mis
+              primeros pasos con C++ y decidí dedicarme a ella. Empecé mis estudios en Ingles, sabiendo la importancia
+              del idioma en una carrera como programación, llegando a completar 4 niveles de los 6 disponibles, para
+              obtener una certificación en la Facultad de Lenguas de B1+. En septiembre del 2022 participe en un
+              Bootcamp de programación de la empresa Plataforma 5. Curse durante 4 meses 10 horas diarias de lunes a
+              viernes, aprendiendo tecnologías y metodologías tanto de Backend como de Frontend. En el Bootcamp, hubo 3
+              proyectos finales, una TMDB aplicando lo aprendido durante la parte teórica y técnica, después la
+              realizacion de un Ecommerce con 4 compañeros, para reforzar las habilidades blandes, y aprender cómo
+              trabaja un equipo con metas semanales y diarias, usando Trello, y metodologías Scrum. El último proyecto
+              trabaje realizando una práctica profesional por 2 meses para la empresa Cruce, en colaboración con 3
+              compañeros haciendo pair programming con ellos, lo que fortaleció mis habilidades aún más mis habilidades
+              técnicas y blandas, como la comunicación y la resolución de problemas que iban apareciendo. En dicha
               experiencia laboral realizamos una app de turnos con seguimiento de un encargado de la empresa Cruce que
-              nos establecia metas semanales a cumplir para ellos. Al terminar el Bootcamp, eh estado mejorando mis
+              nos establecía metas semanales a cumplir para ellos. Al terminar el Bootcamp, eh estado mejorando mis
               habilidades técnicas, en CSS, SASS, REDUX, NEXTJS, TAILWIND CSS y BOOSTRAP, realizando cursos en distintas
               plataformas, y realizando app para mantenerme programando constantemente. Soy una persona activa y
-              apasionada por la programacion, estoy constantemente intentando mejorar mis habilidades tecnicas y blandas
-              y sumarme nuevas herramientas para utilizar en mi dia a dia. Además, disfruto trabajar en equipo y
+              apasionada por la programación, estoy constantemente intentando mejorar mis habilidades técnicas y blandas
+              y sumarme nuevas herramientas para utilizar en mi día a día. Además, disfruto trabajar en equipo y
               enfrentar desafíos que me permitan encontrar soluciones a los problemas. Confío en mis habilidades como
               desarrollador y estoy comprometido con el crecimiento profesional continuo. Estoy entusiasmado por
               contribuir con mi experiencia y conocimientos en un entorno dinámico donde pueda seguir expandiendo mis
@@ -161,7 +161,7 @@ export default function AboutPage() {
               {/* list item */}
               <ExperienceListItem
                 title={"Ingenieria en Sistemas"}
-                desc={"Curse 3 años de la carrera de Ingenieria en Sistemas,"}
+                desc={"Curse 3 años de la carrera de Ingenieria en Sistemas."}
                 date={"2015/2018"}
                 direccion={"left"}
                 place="FCEFyN/Cordoba"

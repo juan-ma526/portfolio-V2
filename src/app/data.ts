@@ -3,7 +3,7 @@ export const items = [
     id: 1,
     color: "from-red-300 to-blue-300",
     title: "Turnos Web App",
-    desc: "Aplicación web que permite la reserva de turnos para empresas con sucursales físicas, posibilitando la administración de la cantidad de clientes en la locación.Cada sucursal podrá diferenciar la cantidad de clientes en simultáneo que podrá recibir y los rangos horarios, desde el usuario administrador/operador.Cada turno será de 15 minutos, y se pueden cancelar hasta con 2 horas de antelación.",
+    desc: "Aplicación web que permite la reserva de turnos para empresas con sucursales físicas, posibilitando la administración de la cantidad de clientes en la locación. Cada sucursal podrá diferenciar la cantidad de clientes en simultáneo que podrá recibir y los rangos horarios, desde el usuario administrador/operador. Cada turno será de 15 minutos, y se pueden cancelar hasta con 2 horas de antelación.",
     img: "/projects/project1.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/App-Turnos-Redux/tree/main/turnos-app" },
@@ -24,7 +24,7 @@ export const items = [
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "TMBD Movie Database",
-    desc: "Aplicacion de Peliculas, para poder ver las peliculas o series en cartelera o por genero, y poder ver informacion de cada pelicula o serie para poder ver el trailer de cada una. A su vez podes tener un registro de usuario para poder almacenar las peliculas favoritas y tener una lista de peliculas o series favoritas.",
+    desc: "Aplicación de Películas, para poder ver las películas o series en cartelera o por género, y poder ver información de cada película o serie para poder ver el tráiler de cada una. A su vez podes tener un registro de usuario para poder almacenar las películas favoritas y tener una lista de películas o series favoritas.",
     img: "/projects/project2.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/TMDB-V2" },
@@ -45,7 +45,7 @@ export const items = [
     id: 3,
     color: "from-violet-300 to-purple-300",
     title: "Ecommerce COMO EN CASA",
-    desc: "Aplicacion Ecommerce para visualizar y poder ordenar entre platos de comidas, con la posibilidad de tener administradores para manejar los productos y el stock de cada comida, y poder manipular las ordenes. Tambien tiene un carrito de compras en el que queda un historial de los pedidos realizados.",
+    desc: "Aplicación Ecommerce para visualizar y poder ordenar entre platos de comidas, con la posibilidad de tener administradores para manejar los productos y el stock de cada comida, y poder manipular las órdenes. También tiene un carrito de compras en el que queda un historial de los pedidos realizados.",
     img: "/projects/project3.jpg",
     links: [{ title: "Github", path: "https://github.com/juan-ma526/Ecommerce-Como-en-Casa" }],
     icons: [
@@ -63,7 +63,7 @@ export const items = [
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "Mini Pago app MercadoPago",
-    desc: "Aplicacion sencilla para implementar el uso de mercadoPago en una compra.",
+    desc: "Aplicación sencilla para implementar el uso de mercadoPago en una compra.",
     img: "/projects/project4.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/mercadoPago" },
@@ -75,7 +75,7 @@ export const items = [
     id: 5,
     color: "from-purple-300 to-red-300",
     title: "Sorteo Devtalles, con Discord",
-    desc: "Aplicacion web para el concurso realizado para la pagina https://cursos.devtalles.com/. Dicha app fue realizada en una semana con la posibilidad de crear sorteos, modificarlos y eliminarlos. La participacion es realizada con discord api, se necesita esta en el servidor de devtalles para poder participar, manejando las rutas con esas condiciones. Tambien se tiene la posibilidad de elegir un ganador y ver los participantes en cada sorteo, con la posibilidad de eliminar alguno de ellos.",
+    desc: "Aplicación web para el concurso realizado para la página https://cursos.devtalles.com/. Dicha app fue realizada en una semana con la posibilidad de crear sorteos, modificarlos y eliminarlos. La participación es realizada con discord api, se necesita estar en el servidor de devtalles para poder participar, manejando las rutas con esas condiciones. También se tiene la posibilidad de elegir un ganador y ver los participantes en cada sorteo, con la posibilidad de eliminar alguno de ellos.",
     img: "/projects/project5.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/devtalles-codequest-sorteos" },
@@ -96,7 +96,7 @@ export const items = [
     id: 6,
     color: "from-purple-300 to-red-300",
     title: "Sorteo Rifa",
-    desc: "Mini Proyecto Freelance. Se trata de una aplicacion web para la compra de rifas, para sortear determinados productos. Con la posibilidad de comprar n cantidad de tickets, dandote la cantidad de tickets comprados. El admin puede crear el stock de tickets, borrar dicho stock, seleccionar un ganador, buscar un ticket en especifico, y ver los tickets que fueron comprados",
+    desc: "Mini Proyecto Freelance. Se trata de una aplicación web para la compra de rifas, para sortear determinados productos. Con la posibilidad de comprar n cantidad de tickets, dándote la cantidad de tickets comprados. El admin puede crear el stock de tickets, borrar dicho stock, seleccionar un ganador, buscar un ticket en específico, y ver los tickets que fueron comprados.",
     img: "/projects/project6.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/sorteo-rifa" },
@@ -115,7 +115,7 @@ export const items = [
     id: 7,
     color: "from-purple-300 to-red-300",
     title: "Perfect Mentor App",
-    desc: "Aplicacion web (mobile first) que permita encontrar a tu mentor ideal. Permite la creacion de usuarios y la posibilidad de elegir entre ser un mentor o un mentee, poder matchear entre los usuarios verificados disponibles, y con los match positivos tener un chat para comunicarse con ellos",
+    desc: "Aplicación web (Mobile first) que permita encontrar a tu mentor ideal. Permite la creación de usuarios y la posibilidad de elegir entre ser un mentor o un mentee, poder machear entre los usuarios verificados disponibles, y con los match positivos tener un chat para comunicarse con ellos.",
     img: "/projects/project7.jpg",
     links: [
       { title: "Github", path: "https://github.com/juan-ma526/perfectMentor" },
