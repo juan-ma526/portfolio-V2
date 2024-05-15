@@ -117,10 +117,7 @@ export const items = [
     title: "Perfect Mentor App",
     desc: "Aplicación web (Mobile first) que permita encontrar a tu mentor ideal. Permite la creación de usuarios y la posibilidad de elegir entre ser un mentor o un mentee, poder machear entre los usuarios verificados disponibles, y con los match positivos tener un chat para comunicarse con ellos.",
     img: "/projects/project7.jpg",
-    links: [
-      { title: "Github", path: "https://github.com/juan-ma526/perfectMentor" },
-      { title: "Video", path: "" },
-    ],
+    links: [{ title: "Github", path: "https://github.com/juan-ma526/perfectMentor" }],
     icons: [
       "/icons/html.png",
       "/icons/nextjs.png",
